@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".RegisterScreen"
+        android:background="@drawable/regsc">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Create a new account"
+            style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email11"
+            android:layout_above="@id/password11"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cnfpswd11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password11"
+            android:layout_centerInParent="true"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confpswd12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+            android:id="@+id/regbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_below="@id/password11"
+            android:layout_marginTop="80dp"
+            android:textAllCaps="false" tools:ignore="OnClick"/>
+
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/reg"
+              android:text="Already have account? Login"
+              android:layout_marginTop="120sp"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:textColor="@color/white"
+              android:padding="5dp"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+
+</RelativeLayout>

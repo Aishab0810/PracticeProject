@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="Fort">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView android:layout_width="380dp" android:layout_height="280dp"
+                                       android:layout_marginTop="30dp"
+                                       android:layout_marginLeft="15dp"
+                                       android:layout_marginRight="15dp"
+                                       app:cardCornerRadius="4dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pullt1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text=" Grip Pullup"/>
+
+        <ImageView android:layout_width="350dp" android:layout_height="250dp"
+                   android:id="@+id/pulli1"
+                   android:src="@drawable/lfort"
+                   android:layout_marginTop="40dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView android:layout_width="380dp" android:layout_height="280dp"
+                                       android:layout_marginTop="320dp"
+                                       android:layout_marginLeft="15dp"
+                                       android:layout_marginRight="15dp"
+                                       app:cardCornerRadius="4dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text=" Arched back Pullup "/>
+
+        <ImageView android:layout_width="350dp" android:layout_height="250dp"
+                   android:id="@+id/hill2"
+                   android:src="@drawable/rfort"
+                   android:layout_marginTop="40dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

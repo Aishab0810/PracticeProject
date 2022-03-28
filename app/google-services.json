@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "159661669799",
+    "project_id": "practice-exploraholic",
+    "storage_bucket": "practice-exploraholic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661669799:android:f8d2803daf9cede7744a82",
+        "android_client_info": {
+          "package_name": "com.example.practice_exploraholic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661669799-72388p0puvencputljcorn26krh138gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.practice_exploraholic",
+            "certificate_hash": "2aea44b4f311497ccb2416a65497017f9ff89cdd"
+          }
+        },
+        {
+          "client_id": "159661669799-lr5bo9u2vifuq39a58ejdto6ggt242t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAonz9Lc5J7Pu1TvRb8ddYfNMgSnEPNyE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661669799-lr5bo9u2vifuq39a58ejdto6ggt242t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
