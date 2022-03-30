@@ -1,52 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-             tools:context="Hillstation">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"            xmlns:tools="http://schemas.android.com/tools"            xmlns:app="http://schemas.android.com/apk/res-auto"            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@drawable/regsc">
 
-    <!-- TODO: Update blank fragment layout -->
-    <androidx.cardview.widget.CardView android:layout_width="380dp" android:layout_height="280dp"
-                                       android:layout_marginTop="30dp"
-                                       android:layout_marginLeft="15dp"
-                                       android:layout_marginRight="15dp"
-                                       app:cardCornerRadius="4dp">
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="Hillstation"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        android:layout_margin="15dp"
+        android:foreground="?selectableItemBackground"
+        android:id="@+id/Card_View"
+        android:background="@color/black"
+        android:clickable="true">
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/hi1"
+                android:src="@drawable/mhill"
+                android:scaleType="centerCrop"/>
         <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/pt1"
-                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht1"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:text=" Pushups "/>
-
-        <ImageView android:layout_width="350dp" android:layout_height="250dp"
-                   android:id="@+id/fi1"
-                   android:src="@drawable/mhill"
-                   android:layout_marginTop="40dp"
-                   android:layout_marginLeft="15dp"
-                   android:layout_marginRight="15dp"/>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView android:layout_width="380dp" android:layout_height="280dp"
-                                       android:layout_marginTop="320dp"
-                                       android:layout_marginLeft="15dp"
-                                       android:layout_marginRight="15dp"
-                                       app:cardCornerRadius="4dp">
-
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text=" Mahabaleshwar "/>
         <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht2"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:text="Inclined Pushupp"/>
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=" Mahabaleshwar is a hill station in India's forested Western Ghats range, south of Mumbai. It features several elevated viewing points.West of here is centuries-old Pratapgad Fort, perched atop a mountain spur."/>
+    </LinearLayout>
 
-        <ImageView android:layout_width="350dp" android:layout_height="250dp"
-                   android:id="@+id/pup2"
-                   android:src="@drawable/tighill"
-                   android:layout_marginTop="40dp"
-                   android:layout_marginLeft="15dp"
-                   android:layout_marginRight="15dp"/>
-    </androidx.cardview.widget.CardView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    android:layout_marginTop="370dp">
 
-</FrameLayout>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ti1"
+                android:src="@drawable/tighill"
+                android:scaleType="centerCrop"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="center"
+                android:text=" Tiger Hill Lonavala "/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:text="The Tiger point derives its name from its resemblance to the shape of a leaping tiger. It offers spectacular views of forests, lush greenery, waterfalls and lakes around. The sunrise and sunset views from here are mesmerizing."/>
+    </LinearLayout>
+
+<!--    <androidx.cardview.widget.CardView -->
+<!--            android:layout_width="match_parent" -->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="320dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            app:cardCornerRadius="4dp"-->
+<!--            android:clickable="true">-->
+
+<!--        <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="Tiger Hill Lonavala"/>-->
+
+<!--        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--                   android:id="@+id/pup2"-->
+<!--                   android:src="@drawable/tighill"-->
+<!--                   android:layout_marginTop="40dp"-->
+<!--                   android:layout_marginLeft="15dp"-->
+<!--                   android:layout_marginRight="15dp"/>-->
+<!--        -->
+<!--    </androidx.cardview.widget.CardView>-->
+
+</androidx.cardview.widget.CardView>
+</ScrollView>
